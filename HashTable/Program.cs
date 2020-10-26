@@ -15,10 +15,10 @@ namespace HashTable
             {
                 hash.Add(Convert.ToString(i), paraWords[i]);
             }
-            foreach (string word in paraWords)
-            {
-                hash.GetFrequency(word);
-            }
+
+            Console.WriteLine("Frequency of 'avoidable' before removal is :" + hash.GetFrequency("avoidable"));
+            hash.RemoveValue("avoidable");
+            Console.WriteLine("Frequency of 'avoidable' after removal is :" + hash.GetFrequency("avoidable"));
             Console.ReadKey();
         }
 
