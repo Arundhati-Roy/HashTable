@@ -114,6 +114,7 @@ namespace HashTable
                     }
                 }
             }
+            Console.WriteLine("Word '{0}' appears {1} times", value, frequency);
             return frequency;
         }
     }
